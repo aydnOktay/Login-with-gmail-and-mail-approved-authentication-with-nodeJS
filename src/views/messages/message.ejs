@@ -1,0 +1,29 @@
+
+<% validateError.forEach(element => { %>
+    <div class="alert alert-danger" role="alert">
+        <%- element.msg  %>  
+      </div>
+<% }) %>
+
+<% successMessage.forEach(element => { %>
+  <div class="alert alert-success" role="alert">
+      <%- element.msg  %>  
+    </div>
+<% }) %>
+
+<% error.forEach(element => { %>
+  <div class="alert alert-danger" role="alert">
+      <%- element  %>  
+    </div>
+<% }) %>
+
+
+
+
+
+
+
+
+
+
+

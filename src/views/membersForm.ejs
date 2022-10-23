@@ -1,0 +1,49 @@
+<div class="card card-warning mt-4">
+    <div class="card-header">
+      <h3 class="card-title">MEMBERS ADD</h3>
+    </div>
+    <% if (locals.validateError !=undefined || locals.successMessage !=undefined || locals.error !=undefined) {
+        %>
+        <%- include("./messages/message") %>
+          <% } %>
+    <!-- /.card-header -->
+    <div class="card-body">
+      <form method="POST" action="/member/form">
+        <div class="row">
+          <div class="col-sm-6">
+            <!-- text input -->
+            <div class="form-group">
+              <label>First Name</label>
+              <input type="text" class="form-control" name="firstName" placeholder="Enter ...">
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-group">
+              <label>Last Name</label>
+              <input type="text" class="form-control" name="lastName" placeholder="Enter ..." >
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-6">
+              <!-- text input -->
+              <div class="form-group">
+                <label>Adress</label>
+                <input type="text" class="form-control" name="adress" placeholder="Enter ...">
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label>Price</label>
+                <input type="text" class="form-control" name="price" placeholder="Enter ..." >
+              </div>
+            </div>
+          </div>
+
+        <button class="btn btn-success" type="submit"> ADD </button>
+
+      </form>
+    </div>
+    <!-- /.card-body -->
+  </div>
